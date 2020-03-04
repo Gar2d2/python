@@ -8,3 +8,4 @@ games={"cod":"call of duty",
     "coh":"company of heroes"
 }
 print(len(games))
+print(games.__len__)
