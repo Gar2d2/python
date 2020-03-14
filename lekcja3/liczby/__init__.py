@@ -1,1 +1,1 @@
-all = ["complex.py", "dzialania.py"]
+all = ["complex", "dzialania"]

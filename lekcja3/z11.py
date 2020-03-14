@@ -1,5 +1,5 @@
-from liczby.dzialania import *
 from liczby.complex import *
+from liczby.dzialania import *
 
 print(dodawanie(1, 1, 1, 1))
 print(odejmowanie(1,1,1,1))
