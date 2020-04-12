@@ -1,5 +1,5 @@
-class Wspak:
-    """Iterator zwracający wartości w odwróconym porządku"""
+class Even:
+    """Iterator zwracajacy wartosci na parzystych indeksach"""
     def __init__(self, data):
         self.data = data
         self.index = -2 #zero też jest parzysta a pierwsza iteracja doda 2
@@ -14,11 +14,11 @@ class Wspak:
             raise StopIteration
         return self.data[self.index]
 
-for i in Wspak([2,4,5,6,7,8]):
+for i in Even([2,4,5,6,7,8]):
     print(i)
 
-for i in Wspak(['ala', 'michal', 'agnieszka']):
+for i in Even(['ala', 'michal', 'agnieszka']):
     print(i)
 
-for i in Wspak('karmazynoweniebo'):
+for i in Even('karmazynoweniebo'):
     print(i)
