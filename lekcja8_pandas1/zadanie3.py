@@ -25,3 +25,9 @@ print('\n\n\n')
 dfx = df[(df['Data zamowienia'].str.slice(start = 6)=='2004')]
 print(pd.to_numeric(dfx['Utarg']).mean())
 print('\n\n\n')
+
+#zapisanie do pliku
+x = df[(df['Data zamowienia'].str.slice(start = 6)=='2004')]
+y = df[(df['Data zamowienia'].str.slice(start = 6)=='2005')]
+x.to_csv('./zamówienia_2004.csv', index = False)
+y.to_csv('./zamówienia_2005.csv', index = False)
