@@ -1,8 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-#Stwórz wykres słupkowy, który wyświetli liczbę urodzonych chłopców i 
-# dziewczynek z całego zbioru.
+
 
 
 df = pd.read_excel('imiona.xlsx')
